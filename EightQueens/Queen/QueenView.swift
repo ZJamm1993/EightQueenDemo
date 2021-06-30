@@ -87,7 +87,7 @@ class QueenView: UIView {
         if let q = self.queenSolution {
             let size = QueenView.blockSizeForCount(q.count)
             for row in 0 ..< q.count {
-                let col = q.cols[row]
+                let col = q.columnIndexForRows[row]
                 let x = CGFloat(col) * size.width
                 let y = CGFloat(row) * size.height
                 let frame = CGRect(origin: CGPoint(x: x, y: y), size: size)

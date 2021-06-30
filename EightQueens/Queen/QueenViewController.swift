@@ -38,7 +38,7 @@ class QueenViewController: UIViewController, UICollectionViewDelegate, UICollect
         self.queenProblem.placeQueens(self.queenCount) { [weak self] (solu) in
             self?.solutions.append(solu)
             let now = Date.timeIntervalSinceReferenceDate
-            if now - lastTime > 0.1 {
+            if now - lastTime > 0.5 {
                 lastTime = now
                 refreshTitle(false)
                 if didLoadFirst == false {
