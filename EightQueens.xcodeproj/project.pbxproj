@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,11 @@
 		1CE4AAE3268C0A1A0029442C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CE4AAE1268C0A1A0029442C /* Main.storyboard */; };
 		1CE4AAE5268C0A1D0029442C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CE4AAE4268C0A1D0029442C /* Assets.xcassets */; };
 		1CE4AAE8268C0A1D0029442C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CE4AAE6268C0A1D0029442C /* LaunchScreen.storyboard */; };
+		1CE4AAF1268C0A840029442C /* QueenProblem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE4AAF0268C0A840029442C /* QueenProblem.swift */; };
+		1CE4AAF4268C16B40029442C /* QueenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE4AAF2268C16B40029442C /* QueenViewController.swift */; };
+		1CE4AAF5268C16B40029442C /* QueenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CE4AAF3268C16B40029442C /* QueenViewController.xib */; };
+		1CE4AAF7268C19E70029442C /* QueenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE4AAF6268C19E70029442C /* QueenView.swift */; };
+		1CE4AAF9268C1FD30029442C /* QueenSolutionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE4AAF8268C1FD30029442C /* QueenSolutionCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		1CE4AAE4268C0A1D0029442C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1CE4AAE7268C0A1D0029442C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1CE4AAE9268C0A1D0029442C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CE4AAF0268C0A840029442C /* QueenProblem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueenProblem.swift; sourceTree = "<group>"; };
+		1CE4AAF2268C16B40029442C /* QueenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueenViewController.swift; sourceTree = "<group>"; };
+		1CE4AAF3268C16B40029442C /* QueenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QueenViewController.xib; sourceTree = "<group>"; };
+		1CE4AAF6268C19E70029442C /* QueenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueenView.swift; sourceTree = "<group>"; };
+		1CE4AAF8268C1FD30029442C /* QueenSolutionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueenSolutionCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,7 @@
 		1CE4AADA268C0A1A0029442C /* EightQueens */ = {
 			isa = PBXGroup;
 			children = (
+				1CE4AAEF268C0A630029442C /* Queen */,
 				1CE4AADB268C0A1A0029442C /* AppDelegate.swift */,
 				1CE4AADD268C0A1A0029442C /* SceneDelegate.swift */,
 				1CE4AADF268C0A1A0029442C /* ViewController.swift */,
@@ -65,6 +76,18 @@
 				1CE4AAE9268C0A1D0029442C /* Info.plist */,
 			);
 			path = EightQueens;
+			sourceTree = "<group>";
+		};
+		1CE4AAEF268C0A630029442C /* Queen */ = {
+			isa = PBXGroup;
+			children = (
+				1CE4AAF0268C0A840029442C /* QueenProblem.swift */,
+				1CE4AAF2268C16B40029442C /* QueenViewController.swift */,
+				1CE4AAF3268C16B40029442C /* QueenViewController.xib */,
+				1CE4AAF6268C19E70029442C /* QueenView.swift */,
+				1CE4AAF8268C1FD30029442C /* QueenSolutionCollectionViewCell.swift */,
+			);
+			path = Queen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -103,7 +126,7 @@
 				};
 			};
 			buildConfigurationList = 1CE4AAD3268C0A1A0029442C /* Build configuration list for PBXProject "EightQueens" */;
-			compatibilityVersion = "Xcode 13.0";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -126,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CE4AAE8268C0A1D0029442C /* LaunchScreen.storyboard in Resources */,
+				1CE4AAF5268C16B40029442C /* QueenViewController.xib in Resources */,
 				1CE4AAE5268C0A1D0029442C /* Assets.xcassets in Resources */,
 				1CE4AAE3268C0A1A0029442C /* Main.storyboard in Resources */,
 			);
@@ -138,9 +162,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CE4AAF9268C1FD30029442C /* QueenSolutionCollectionViewCell.swift in Sources */,
+				1CE4AAF1268C0A840029442C /* QueenProblem.swift in Sources */,
 				1CE4AAE0268C0A1A0029442C /* ViewController.swift in Sources */,
 				1CE4AADC268C0A1A0029442C /* AppDelegate.swift in Sources */,
 				1CE4AADE268C0A1A0029442C /* SceneDelegate.swift in Sources */,
+				1CE4AAF4268C16B40029442C /* QueenViewController.swift in Sources */,
+				1CE4AAF7268C19E70029442C /* QueenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +324,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -323,6 +352,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
